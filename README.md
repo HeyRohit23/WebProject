@@ -1,16 +1,14 @@
-# React + Vite
+💡 Core Concepts I Used
+1. Two-Way Data Binding (Controlled Components)
+In this project, I used Two-Way Binding for the search bar and note inputs.
+What it is: It means the "Code" and the "Screen" are always in sync.
+How it works: When you type in the input box, it updates the State (the code). If the code changes the State, the text in the input box updates automatically. They are "tied" together.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+2. State Management (useState)
+I used the useState hook to keep track of data that changes, like the list of notes or the current page number. Whenever the state changes, React automatically updates the parts of the screen that need it without refreshing the whole page.
 
-Currently, two official plugins are available:
+3. Side Effects (useEffect)
+I used useEffect to handle "outside" tasks, like fetching images from an API when the page loads. It tells the app: "Once you are visible on the screen, go get the data."
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+4. Props (Properties)
+I used Props to pass information from a parent component to a child component (like passing image data into a Card component). This keeps the code modular and reusable.
